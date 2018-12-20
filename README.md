@@ -1,3 +1,10 @@
+# Lesson learned
+
+Setting `app.config['SERVER_NAME'] = '0.0.0.0:5000'`
+is not the same as calling `app.run(host='0.0.0.0', port=5000)`.
+If you set `SERVER_NAME` flask thinks its name is `0.0.0.0:5000`
+and you will have the below problem.
+
 # How to connect to flask in docker-compose
 
 Normally starting app and curling on host works.

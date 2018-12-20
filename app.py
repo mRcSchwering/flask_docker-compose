@@ -8,5 +8,4 @@ def hello_world():
 
 
 if __name__ == '__main__':
-    app.config['SERVER_NAME'] = '0.0.0.0:5000'
-    app.run()
+    app.run(host='0.0.0.0', port=5000)
